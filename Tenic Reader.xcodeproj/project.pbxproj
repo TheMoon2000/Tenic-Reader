@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC58315D1E76A11100ACFFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58315C1E76A11100ACFFBC /* AppDelegate.swift */; };
+		CC58315F1E76A11100ACFFBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC58315E1E76A11100ACFFBC /* Assets.xcassets */; };
+		CC5831621E76A11100ACFFBC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5831601E76A11100ACFFBC /* MainMenu.xib */; };
+		CC58316C1E76A12B00ACFFBC /* NSDataGzipAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = CC58316A1E76A12B00ACFFBC /* NSDataGzipAdditions.h */; };
+		CC5831721E76A7D600ACFFBC /* NSDataGzipAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC58316B1E76A12B00ACFFBC /* NSDataGzipAdditions.m */; };
+		CC5831741E76A7FB00ACFFBC /* libz.1.2.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5831731E76A7FB00ACFFBC /* libz.1.2.8.dylib */; };
+		CC58317B1E76ABBF00ACFFBC /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5831781E76ABBF00ACFFBC /* NSData+AESCrypt.m */; };
+		CC58317C1E76ABBF00ACFFBC /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CC58317A1E76ABBF00ACFFBC /* NSString+AESCrypt.m */; };
+		CC58317E1E76DDD500ACFFBC /* FileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC58317D1E76DDD500ACFFBC /* FileView.xib */; };
+		CC5831801E76DE2600ACFFBC /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58317F1E76DE2600ACFFBC /* FileView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC5831591E76A11100ACFFBC /* Tenic Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tenic Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC58315C1E76A11100ACFFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC58315E1E76A11100ACFFBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC5831611E76A11100ACFFBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CC5831631E76A11100ACFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5831691E76A12A00ACFFBC /* Tenic Reader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tenic Reader-Bridging-Header.h"; sourceTree = "<group>"; };
+		CC58316A1E76A12B00ACFFBC /* NSDataGzipAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataGzipAdditions.h; path = "Tenic Reader/NSDataGzipAdditions.h"; sourceTree = "<group>"; };
+		CC58316B1E76A12B00ACFFBC /* NSDataGzipAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataGzipAdditions.m; path = "Tenic Reader/NSDataGzipAdditions.m"; sourceTree = "<group>"; };
+		CC5831731E76A7FB00ACFFBC /* libz.1.2.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.2.8.dylib; sourceTree = "<group>"; };
+		CC5831771E76ABBF00ACFFBC /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		CC5831781E76ABBF00ACFFBC /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
+		CC5831791E76ABBF00ACFFBC /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
+		CC58317A1E76ABBF00ACFFBC /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
+		CC58317D1E76DDD500ACFFBC /* FileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileView.xib; sourceTree = "<group>"; };
+		CC58317F1E76DE2600ACFFBC /* FileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC5831561E76A11100ACFFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5831741E76A7FB00ACFFBC /* libz.1.2.8.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC5831501E76A11100ACFFBC = {
+			isa = PBXGroup;
+			children = (
+				CC58316A1E76A12B00ACFFBC /* NSDataGzipAdditions.h */,
+				CC58316B1E76A12B00ACFFBC /* NSDataGzipAdditions.m */,
+				CC5831771E76ABBF00ACFFBC /* NSData+AESCrypt.h */,
+				CC5831781E76ABBF00ACFFBC /* NSData+AESCrypt.m */,
+				CC5831791E76ABBF00ACFFBC /* NSString+AESCrypt.h */,
+				CC58317A1E76ABBF00ACFFBC /* NSString+AESCrypt.m */,
+				CC5831731E76A7FB00ACFFBC /* libz.1.2.8.dylib */,
+				CC58315B1E76A11100ACFFBC /* Tenic Reader */,
+				CC58315A1E76A11100ACFFBC /* Products */,
+				CC5831691E76A12A00ACFFBC /* Tenic Reader-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		CC58315A1E76A11100ACFFBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC5831591E76A11100ACFFBC /* Tenic Reader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC58315B1E76A11100ACFFBC /* Tenic Reader */ = {
+			isa = PBXGroup;
+			children = (
+				CC58315C1E76A11100ACFFBC /* AppDelegate.swift */,
+				CC58317D1E76DDD500ACFFBC /* FileView.xib */,
+				CC58317F1E76DE2600ACFFBC /* FileView.swift */,
+				CC58315E1E76A11100ACFFBC /* Assets.xcassets */,
+				CC5831601E76A11100ACFFBC /* MainMenu.xib */,
+				CC5831631E76A11100ACFFBC /* Info.plist */,
+			);
+			path = "Tenic Reader";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC5831581E76A11100ACFFBC /* Tenic Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5831661E76A11100ACFFBC /* Build configuration list for PBXNativeTarget "Tenic Reader" */;
+			buildPhases = (
+				CC5831551E76A11100ACFFBC /* Sources */,
+				CC5831561E76A11100ACFFBC /* Frameworks */,
+				CC5831571E76A11100ACFFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tenic Reader";
+			productName = "Tenic Reader";
+			productReference = CC5831591E76A11100ACFFBC /* Tenic Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC5831511E76A11100ACFFBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jerry Shan";
+				TargetAttributes = {
+					CC5831581E76A11100ACFFBC = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0830;
+					};
+				};
+			};
+			buildConfigurationList = CC5831541E76A11100ACFFBC /* Build configuration list for PBXProject "Tenic Reader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC5831501E76A11100ACFFBC;
+			productRefGroup = CC58315A1E76A11100ACFFBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC5831581E76A11100ACFFBC /* Tenic Reader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC5831571E76A11100ACFFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC58315F1E76A11100ACFFBC /* Assets.xcassets in Resources */,
+				CC58317E1E76DDD500ACFFBC /* FileView.xib in Resources */,
+				CC5831621E76A11100ACFFBC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC5831551E76A11100ACFFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5831801E76DE2600ACFFBC /* FileView.swift in Sources */,
+				CC5831721E76A7D600ACFFBC /* NSDataGzipAdditions.m in Sources */,
+				CC58317C1E76ABBF00ACFFBC /* NSString+AESCrypt.m in Sources */,
+				CC58317B1E76ABBF00ACFFBC /* NSData+AESCrypt.m in Sources */,
+				CC58315D1E76A11100ACFFBC /* AppDelegate.swift in Sources */,
+				CC58316C1E76A12B00ACFFBC /* NSDataGzipAdditions.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC5831601E76A11100ACFFBC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC5831611E76A11100ACFFBC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC5831641E76A11100ACFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC5831651E76A11100ACFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CC5831671E76A11100ACFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tenic Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themoon2000.Tenic-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tenic Reader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CC5831681E76A11100ACFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tenic Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themoon2000.Tenic-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tenic Reader-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC5831541E76A11100ACFFBC /* Build configuration list for PBXProject "Tenic Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5831641E76A11100ACFFBC /* Debug */,
+				CC5831651E76A11100ACFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5831661E76A11100ACFFBC /* Build configuration list for PBXNativeTarget "Tenic Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5831671E76A11100ACFFBC /* Debug */,
+				CC5831681E76A11100ACFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC5831511E76A11100ACFFBC /* Project object */;
+}
